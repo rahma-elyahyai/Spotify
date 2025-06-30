@@ -1,0 +1,42 @@
+.actions-success {
+    background-color: #319b56;
+    width: 100px;
+    transition: transform 0.3s;
+
+}
+
+.actions-success:hover {
+    background-color: #158c3e;
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+
+.actions-reject {
+    background-color: #8b1414;
+    width: 100px;
+    transition: transform 0.3s;
+
+}
+
+.actions-reject:hover {
+    background-color: #8c1515;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.play {
+    border-radius: 30px;
+    width: 100px;
+    background-color: #737479;
+    transition: transform 0.3s;
+}
+
+.play:hover {
+    background-color: #737479c4;
+    transform: scale(1.05);
+}

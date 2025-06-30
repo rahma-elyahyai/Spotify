@@ -1,0 +1,89 @@
+.settings-container {
+  color: white;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #121212;
+  margin: 0x;
+  padding: 20px;
+  height: 100vh;
+
+}
+
+
+.settings-title {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: rgb(12, 12, 12);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.settings-form label {
+  color: white;
+  margin-bottom: 8px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.settings-form input {
+  background-color: #2d2d2d;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.settings-form button {
+  background-color: #1DB954;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button {
+  background-color: #1DB954;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1ed760;
+}
+
+.settings-form button:hover {
+  background-color: #1ed760;
+}
+
+.deleteAccount {
+  background: linear-gradient(135deg, #ff3b3b, #d32f2f);
+  margin-top: 10px;
+}
+
+.deleteAccount:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff5757, #c62828);
+}

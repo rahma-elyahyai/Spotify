@@ -1,0 +1,42 @@
+
+.compact-player {
+    padding: 8px !important;
+  }
+  
+  .compact-content {
+    padding: 0 8px !important;
+    min-width: 300px;
+  }
+  
+  .compact-controls {
+    gap: 4px !important;
+    margin-top: 4px !important;
+  }
+  .compact-add-button {
+    margin-top: 8px !important;
+  }
+  
+  .compact-slider {
+    margin: 4px 0 !important;
+  }
+  
+  .dropdown .dropdown-item{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .dropdown .dropdown-item:hover {
+  background-color: rgb(164, 164, 164);
+  transform: scale(1.01);
+  transform: translateX(1px);
+  }
+ .dropdown .dropdown-menu{
+    background-color: rgb(224, 224, 224);
+  }
+
+  Button:hover{
+    transform: scale(1.03);
+  }
+
+ 

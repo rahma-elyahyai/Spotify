@@ -1,0 +1,65 @@
+
+.player-card {
+    width:100%; 
+    background-color: rgb(12, 12, 12);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+.player-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  canvas {
+    width: 100%;
+    height: 100px;
+    background: black;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+    height: 5px;
+    accent-color:#1DB954;
+    outline: none;
+  }
+  
+  .track-duration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .track-duration p{
+    font-size: 10px;
+    font-weight: 500;
+    color: #1DB954;
+    margin: 0;
+  }
+  
+ .track-duration button{
+    width: 3rem;
+    height: 3rem;
+    font-size: 34px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px auto 10px auto;
+  }
+  

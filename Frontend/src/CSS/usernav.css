@@ -1,0 +1,98 @@
+.searchContainer {
+    position: relative; 
+  }
+
+  .searchContainer .form-control {
+    background-color:#ebebebe7;
+    border-radius: 10px;
+    color:black;
+  }
+
+  
+  
+  .searchSuggestions {
+    position: absolute; 
+    top: 100%; 
+    left: 40%;
+    width: 30%; 
+    background-color:	#3f3d3d;
+    z-index: 1000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    max-height: 220px; 
+    overflow-y: auto;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .suggestionItem {
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #171616;
+    transition: transform 0.3s ease-in-out; 
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.suggestionItem:hover {
+  background-color:	#656565;
+  transform: translateX(5px); 
+}
+
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 5;
+    display: none; 
+  }
+  
+  
+  .overlay.visible {
+    display: block;
+  }
+
+   .overlay-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 2000;
+    display: none; 
+  }
+  
+  
+  .overlay-modal.visible {
+    display: block;
+  }
+  
+.dropdown-menu {
+  z-index: 10000; 
+}
+
+.dropdown-item:hover {
+  background-color: #333;
+}
+
+.form-check-input:checked {
+  background-color: #1DB954;
+  border-color: #1DB954;
+}
+
+.form-check-label {
+  user-select: none;
+}
+ 

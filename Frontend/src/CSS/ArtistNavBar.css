@@ -1,0 +1,8 @@
+:hover.navButtons{
+    color:  #1ed760;
+}
+
+.navButtons{
+    color: white;
+    cursor: pointer;
+}

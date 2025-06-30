@@ -1,0 +1,242 @@
+
+.artistsName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    font-weight: 600;
+    color: white;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(4, 49, 48, 1) 0%, rgba(36, 113, 87, 1) 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.banner{
+    background: linear-gradient(90deg, rgba(255, 105, 180, 1) 0%, rgba(119, 58, 196, 1) 100%);
+    height: 80px;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    align-content: center;
+}
+.queue {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+}
+
+.queue:hover {
+    transform: scale(1.3);
+}
+
+.shareDialogbox{
+    
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100; 
+        background-color: #1c1c1c;
+        border-radius: 10px;
+        width: 400px; 
+        height: 220px;;
+        padding: 20px;
+        margin: 20px;
+        color: white;
+      
+}
+.artistsName img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.artistsDetails {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.artistsDetails h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.artistsDetails p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.artistsDetails button {
+    width: 100px;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #2b7d56;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.artistsDetails button:hover {
+    background-color: #1a5f41;
+}
+
+
+.songsContainer {
+    margin-top: 20px;
+}
+
+.artistSongs {
+    background-color: rgba(36, 113, 87, 1);
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.2rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content:center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 100px; 
+}
+
+
+.deleteSong{
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.deleteSong :hover{
+    transform: scale(1.1); 
+}
+
+.share{
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+  
+  }
+  .share :hover{
+  
+    transform: scale(1.1);
+  }
+.artistsImage{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.artistSongs:hover {
+    background-color: rgba(24, 92, 70, 1); 
+    transform: scale(1.05);  
+    
+}
+
+.artistSongs h2 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.options button {
+    background-color: #333; 
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.options button:hover {
+    background-color: #1e1e1e; 
+    transform: scale(1.05); 
+}
+
+.albumImage{
+    height: 100px;
+    width: 100px;
+    
+}
+
+.artistsName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    font-weight: 600;
+    color: white;
+    padding: 20px;
+   
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+
+.albumHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    font-weight: 600;
+    color: white;
+    padding: 20px;
+    background: linear-gradient(45deg, rgb(34, 139, 34) 0%, rgb(85, 107, 47) 25%, rgb(46, 139, 87) 50%, rgb(27, 128, 122) 75%, rgb(0, 100, 0) 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.albumHeaderImage
+{
+    height: 150px;;
+}
+
+.albumDetails{
+    display: flex;
+    flex-direction: column;
+}
+
+.follow-artists{
+
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.follow-artists .unfollow {
+    background-color: rgb(146, 64, 64);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.follow-artists .unfollow:hover{
+    background-color: rgb(85, 19, 19);
+}
+

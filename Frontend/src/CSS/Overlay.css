@@ -1,0 +1,9 @@
+.overlay img, .overlay video {
+    max-width: 200px; 
+    max-height: 200px;
+    position: relative;
+    top:40%;
+    left:43%;
+    z-index: 101;
+    border-radius: 50%;
+  }

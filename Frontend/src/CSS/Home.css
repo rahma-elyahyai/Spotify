@@ -1,0 +1,29 @@
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(11, 11, 11);
+    height: 70px;
+    padding: 10px;
+  }
+  
+  .audio-player-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-container {
+    margin-top: auto;
+  }
+  

@@ -1,0 +1,53 @@
+.song-item{
+
+    height: 80px;
+    background-color:rgb(104, 100, 100);
+    color: white;
+    font-size: medium;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+    gap:60px;
+}
+
+.Song-queues{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: black;
+    max-height: 400px;
+    align-content: center;
+    margin: 20px;
+    width: 600px;
+    overflow-y: auto;
+}
+
+.song-item:hover {
+    background-color: rgb(60, 60, 60);
+    transform: scale(1.05);
+    cursor: grab;
+}
+
+
+.song-item:active {
+    cursor: grabbing;
+}
+
+.Reorder-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.close {
+    color: white;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
