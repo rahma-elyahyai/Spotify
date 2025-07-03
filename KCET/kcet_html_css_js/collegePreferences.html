@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .heading {
+            display: flex;
+            flex-direction: row;
+            gap: 230px;
+            align-items: center;
+            margin: 5px;
+
+        }
+
+        .heading1 {
+            background-color: #730573d1;
+            margin: 10px;
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        table {
+            position: relative;
+            left: 15%;
+            border-collapse: collapse;
+        }
+    </style>
+    <title>College preferences</title>
+</head>
+
+<body>
+    <div class="heading">
+        <div id="logo">
+            <img src="C:\assesments\KCET\kcet_html_css_js\Screenshot 2024-10-07 140733.png" class="img-fluid">
+        </div>
+
+        <h1>College preferences</h1>
+
+        <div id="logo1">
+            <img src="C:\assesments\KCET\kcet_html_css_js\Screenshot 2024-10-07 171237.png" class="img-fluid">
+        </div>
+    </div>
+
+    <form class="container">
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">College name</label>
+                    <input  class="form-control" list="datalistOptions" id="exampleFormControlInput1"
+                        placeholder="Enter the college name">
+                        <datalist id="datalistOptions">
+                            <option value="RVCE"></option>
+                            <option value="BMSCE"></option>
+                            <option value="BMSIT"></option>
+                            <option value="PES"></option>
+                            <option value="MSRIT"></option>
+                            <option value="NMIT"></option>
+                        </datalist>
+                </div>
+            </div>
+            <div class="col">
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">College code</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput2"
+                        placeholder="enter the college code">
+                </div>
+            </div>
+
+        </div>
+        <div class="container1">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <div class="mb-3">
+                        <label for="exampleDataList" class="form-label">Branch</label>
+                        <input class="form-control" list="datalistOptions2" id="exampleDataList"
+                            placeholder="Enter branch name">
+                        <datalist id="datalistOptions2">
+                            <option value="CSE"></option>
+                            <option value="ISE"></option>
+                            <option value="ECE"></option>
+                            <option value="EEE"></option>
+                            <option value="MEC"></option>
+                            <option value="CVL"></option>
+                        </datalist>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Preference number</label>
+                        <input type="Phone" class="form-control" id="exampleFormControlInput3"
+                            placeholder="Enter your preference number">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container2">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <button type="button" class="btn btn-success" id="add">Add</button>
+
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-danger" id="del1">Clear</button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+
+    <br><br>
+    <table border="border" cellpadding="45" cellspacing="35">
+        <div class="registration">
+            <div class="heading1">
+                <h2>
+                    College preference list
+                </h2>
+            </div>
+
+            <thead>
+                <tr>
+                    <th>College name</th>
+                    <th>College code</th>
+                    <th>Branch</th>
+                    <th>Preference number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+    </table>
+
+    </div>
+    <br><br>
+    <button type="button" class="btn btn-secondary" id="del1">Submit</button>
+    
+    <button type="button" class="btn btn-link" onclick="home()">Home</button>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="collegePreference_js.js"></script>
+
+</html>
