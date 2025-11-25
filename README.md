@@ -51,4 +51,21 @@ This application allows users to stream songs, create playlists, follow artists,
 ---
 
 ## 🧰 System Architecture
+Frontend (React)
+│
+├── REST APIs (Spring Boot)
+│ ├── Authentication & Role Management
+│ ├── Songs, Playlists, Artists
+│ ├── Analytics & Moderation
+│
+└── Database (MS SQL Server)
+├── Users / Artists / Admins
+├── Songs / Albums / Playlists
+├── Listening History / Notifications
+
+👤 Author
+
+Chandu B R
+Junior Machine Learning Engineer | Full Stack Developer
+📍 Bangalore, India
 
