@@ -1,4 +1,7 @@
 # 🎵 Music Streaming System (Melodify)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![SQL Server](https://img.shields.io/badge/MS%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
 
 A **full-stack music streaming platform** inspired by Spotify, built using **Spring Boot**, **React (Vite)**, and **MS SQL Server**.  
 This application allows users to stream songs, create playlists, follow artists, and view analytics — with **secure role-based access** for Users, Artists, and Admins.
