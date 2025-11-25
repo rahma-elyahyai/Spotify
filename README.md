@@ -49,7 +49,7 @@ This application allows users to stream songs, create playlists, follow artists,
 | **Frontend** | React (Vite), Material UI, Bootstrap, HTML5 Audio API, ApexCharts, Axios |
 | **Backend** | Spring Boot, Spring Security, Spring AOP, RESTful APIs |
 | **Database** | Microsoft SQL Server |
-| **Libraries & Tools** | JSZip, FileSaver, CryptoJS, html2canvas, React Router, Day.js |
+
 
 ---
 
