@@ -6,6 +6,8 @@
 A **full-stack music streaming platform** inspired by Spotify, built using **Spring Boot**, **React (Vite)**, and **MS SQL Server**.  
 This application allows users to stream songs, create playlists, follow artists, and view analytics — with **secure role-based access** for Users, Artists, and Admins.
 
+![App Screenshot](./Screenshot%202025-11-25%20181325.png)
+
 ---
 
 ## 🚀 Features
