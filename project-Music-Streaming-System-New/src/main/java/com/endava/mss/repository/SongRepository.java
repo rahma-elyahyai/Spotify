@@ -30,7 +30,7 @@ public interface SongRepository extends JpaRepository<Song, Long> {
 
 	Page<Song> findByTitleContainingIgnoreCase(String term, Pageable pageable);
 
-	@Query(value = "select top 5 * from song s where status='APPROVED' order by s.play_count desc", nativeQuery = true)
+	@Query(value = "select * from song s where status='APPROVED' order by s.play_count desc limit 5", nativeQuery = true)
 	List<Song> findTopFiveSongs();
 
 	@Query("SELECT new com.endava.mss.entityDTO.SongDTO(s.id, s.title, s.genre, s.language, s.playCount, s.coverImage, s.releaseDate, s.status, s.favorite, s.lyrics, s.mp3File, s.artist.id, s.album.id, s.listenedDuration) FROM Song s")

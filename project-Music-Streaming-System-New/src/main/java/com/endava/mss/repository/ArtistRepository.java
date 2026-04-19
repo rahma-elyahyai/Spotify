@@ -17,6 +17,6 @@ public interface ArtistRepository extends JpaRepository<Artist, Long> {
 
 	Page<Artist> findByNameContainingIgnoreCase(String term, Pageable pageable);
 	
-	@Query(value="select top 5 * from artist a order by a.total_play_count desc",nativeQuery = true)
+	@Query(value="select * from artist a order by a.total_play_count desc limit 5", nativeQuery = true)
 	List<Artist> findTopFiveArtists();
 }

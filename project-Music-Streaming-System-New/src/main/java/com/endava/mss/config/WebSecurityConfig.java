@@ -28,58 +28,62 @@ public class WebSecurityConfig {
     private JwtFilter jwtFilter;
 
     @Bean
-    SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
-                .csrf(csrf -> csrf.disable())
-                .cors(withDefaults())
-                .authorizeHttpRequests(auth -> auth
+SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    http
+            .csrf(csrf -> csrf.disable())
+            .cors(withDefaults())
+            .authorizeHttpRequests(auth -> auth
 
-                                .requestMatchers(
-                                        "/authentication/**",
-                                        "/user/all",
-                                        "/artist/all",
-                                        "/artist/topArtists",
-                                        "/artist/image/**",
-                                        "/artist/songs/stream/**",
-                                        "/artist/songs/image/**",
-                                        "/artist/songs/approvedSongs",
-                                        "/artist/songs/all",
-                                        "/artist/songs/search/*",
-                                        "/album/image/**",
-                                        "/artist/songs/filter",
-                                        "/artist/songs/genres",
-                                        "/artist/songs/languages",
-                                        "/artist/{email}",
-                                        "/admin/OTP",
-                                        "/analytics/*",
-                                        "/playlists/shared/*"
-                                ).permitAll()
+                            .requestMatchers(
+        "/",
+        "/error",
+        "/api/auth/**",
+        "/authentication/**",
+        "/user/all",
+        "/artist/all",
+        "/artist/songs/**",
+        "/artist/songs/top",
+        "/artist/topArtists",
+        "/artist/image/**",
+        "/artist/songs/stream/**",
+        "/artist/songs/image/**",
+        "/artist/songs/approvedSongs",
+        "/artist/songs/all",
+        "/artist/songs/search/*",
+        "/album/image/**",
+        "/artist/songs/filter",
+        "/artist/songs/genres",
+        "/artist/songs/languages",
+        "/artist/{email}",
+        "/admin/OTP",
+        "/analytics/*",
+        "/artist/songs/playCount",
+        "/artist/songs/autoSleep/**",
+        "/songQueue/**",
+        "/playlists/**",
+        "/listeningHistory/**",
+        "/user/**",
+        "/playlists/shared/*"
+).permitAll()
 
+                            .requestMatchers("/user/**", "/playlists/**", "/listeningHistory/**", "/songQueue/**", "/notifications/**")
+                            .hasAnyRole("USER", "ADMIN")
 
-                                .requestMatchers("/user/**", "/playlists/**", "/listeningHistory/**", "/songQueue/**", "/notifications/**")
-                                .hasAnyRole("USER", "ADMIN")
+                            .requestMatchers("/artist/songs", "/album", "/concerts/**")
+                            .hasAnyRole("ARTIST", "ADMIN")
 
+                            .requestMatchers("/admin/**")
+                            .hasRole("ADMIN")
 
-                                .requestMatchers("/artist/songs", "/album", "/concerts/**")
-                                .hasAnyRole("ARTIST", "ADMIN")
+                            .anyRequest().authenticated()
+            )
+            .sessionManagement(session -> session
+                            .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+            )
+            .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 
-
-                                .requestMatchers("/admin/**")
-                                .hasRole("ADMIN")
-
-
-
-                                .anyRequest().authenticated()
-                )
-                .sessionManagement(session -> session
-                                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                )
-                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
-
-        return http.build();
-    }
-
-
+    return http.build();
+}
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();

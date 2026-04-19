@@ -1,7 +1,7 @@
 package com.endava.mss.constantFiles;
 
 public enum CORSUrl {
-PORT("http://localhost:5173/");
+PORT("http://localhost:5173");
 private final String value;
 
 CORSUrl(String value) {
