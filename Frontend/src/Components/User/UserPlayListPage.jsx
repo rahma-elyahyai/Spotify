@@ -13,6 +13,7 @@ import { NotificationsContext } from "../../Context/NotificationsContext";
 import CryptoJS from 'crypto-js'
 import SharePlayListModal from "./sharePlayListModal";
 import { SyncLoader } from "react-spinners";
+import playlistImage from "../../assets/stock-vector-my-playlist-stylized-hand-drawn-vector-lettering-musical-disk-cartoon-clipart-grunge-background-1276279186.jpg";
 const UserPlayListPage = ({ playlist, setCurrentSong, setPlayListPage, userId }) => {
   const [userPlaylist, setPlaylist] = React.useState([]);
   const [share, setShare] = React.useState(false);
@@ -194,8 +195,7 @@ const UserPlayListPage = ({ playlist, setCurrentSong, setPlayListPage, userId })
       <div className="artistsName">
         <div>
           <img
-            src={
-              "src/assets/stock-vector-my-playlist-stylized-hand-drawn-vector-lettering-musical-disk-cartoon-clipart-grunge-background-1276279186.jpg"}
+            src={playlistImage}
             alt={playlist.playListName}
           />
         </div>

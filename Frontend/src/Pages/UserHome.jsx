@@ -26,6 +26,10 @@ import { debounce } from "lodash";
 import VoiceCommand from "../Components/VoiceCommand";
 import UserNavBar from "../Components/User/UserNavBar";
 import AddToPlaylistModal from "../Components/AddToPlayModal";
+import playlistImage from "../assets/stock-vector-my-playlist-stylized-hand-drawn-vector-lettering-musical-disk-cartoon-clipart-grunge-background-1276279186.jpg";
+import stackIcon from "../assets/stack.png";
+import plusIcon from "../assets/plus.png";
+import clockIcon from "../assets/clock_icon.png";
 
 const UserHome = () => {
   const location = useLocation();
@@ -508,7 +512,7 @@ const UserHome = () => {
           <div className="sidePane">
             <div className="library">
               <div>
-                <img src="src/assets/stack.png" alt="library-icon" />
+            <img src={stackIcon} alt="library-icon" />  
               </div>
               <div>Your Library</div>
               <div>
@@ -516,13 +520,13 @@ const UserHome = () => {
                   placement="top"
                   overlay={<Tooltip id="tooltip-top">Create new playlist</Tooltip>}
                 >
-                  <img
-                    src="src/assets/plus.png"
-                    alt="add-icon"
-                    onClick={handlePlayList}
-                    className="addButton"
-                  />
-                </OverlayTrigger>
+                 <img
+                  src={plusIcon}
+                  alt="add-icon"
+                  onClick={handlePlayList}
+                  className="addButton"
+                />
+                                </OverlayTrigger>
               </div>
             </div>
 
@@ -584,11 +588,11 @@ const UserHome = () => {
                       }}
                     >
                       <div>
-                        <img
-                          src={"src/assets/clock_icon.png"}
-                          alt="Clock Icon"
-                          className="icon"
-                        />
+                       <img
+                        src={clockIcon}
+                        alt="Clock Icon"
+                        className="icon"
+                      />
                       </div>
                       <h6 className="recentText">Recents</h6>
                     </div>
@@ -755,7 +759,7 @@ const UserHome = () => {
                           onClick={() => handlePlayListSelect(playlist)}
                         >
                           <img
-                            src="src\assets\stock-vector-my-playlist-stylized-hand-drawn-vector-lettering-musical-disk-cartoon-clipart-grunge-background-1276279186.jpg"
+                            src={playlistImage}
                             alt={playlist.playListName}
                             className="playListImage"
                           />

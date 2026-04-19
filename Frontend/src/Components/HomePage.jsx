@@ -9,6 +9,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 import UserArtistPage from "../Components/User/UserArtistPage"
 import Overlay from "./Overlay";
 import { debounce } from "lodash";
+import stackIcon from "../assets/stack.png";
+import plusIcon from "../assets/plus.png";
 
 
 const HomePage = () => {
@@ -214,11 +216,11 @@ const HomePage = () => {
         <div className="sidePane">
           <div className="library">
             <div>
-              <img src="src/assets/stack.png" alt="library-icon" />
+              <img src={stackIcon} alt="library-icon" />
             </div>
             <div>Your Library</div>
             <div onClick={handlePlayList} className="addButton">
-              <img src="src/assets/plus.png" alt="add-icon" />
+            <img src={plusIcon} alt="add-icon" />
             </div>
           </div>
 

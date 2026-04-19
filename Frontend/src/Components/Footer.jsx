@@ -2,6 +2,7 @@ import { Container, Row, Col, Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../CSS/Footer.css';
 import { Link, useNavigate } from 'react-router-dom';
+import footerImage from "../assets/file-CoN3ZXq7YCM9mdeVHKJG1Z.jpg";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ const Footer = () => {
             <p>
               Melodify - Music streaming system
             </p>
-            <img src="src\assets\file-CoN3ZXq7YCM9mdeVHKJG1Z.jpg" style={{height:"200px",width:"200px"}}></img>
+            <img src={footerImage} style={{ height: "200px", width: "200px" }} alt="Melodify" />
           </Col>
 
           <Col md={4} className="footer-column">

@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+Frontend/dist/
+dist/
+node_modules/
+target/
+*.log
+Screenshot *.png

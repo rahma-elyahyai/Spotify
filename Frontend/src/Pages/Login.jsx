@@ -4,7 +4,7 @@ import "../CSS/Login.css";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import UserAuthenticationNavbar from "../Components/User/UserAuthenticationNavbar";
-
+import loadingVideo from "../assets/music-loading-animated-icon-download-in-lottie-json-gif-static-svg-file-formats--audio-sound-instrument-pack-services-icons-7989956.mp4";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -61,7 +61,7 @@ const Login = () => {
         <div className="overlay visible">
           <video autoPlay loop muted>
             <source
-              src="src/assets/music-loading-animated-icon-download-in-lottie-json-gif-static-svg-file-formats--audio-sound-instrument-pack-services-icons-7989956.mp4"
+              src={loadingVideo}
               type="video/mp4"
             />
           </video>
